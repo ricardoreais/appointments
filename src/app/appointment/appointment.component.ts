@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appointment.component.css']
 })
 export class AppointmentComponent implements OnInit {
+  currentDate: string;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  setDate(date) {
+    this.currentDate = date;
+  }
 }
