@@ -1,0 +1,36 @@
+<h2>Please create a new appointment below:</h2>
+<div>
+  <form class="appointment-info-form">
+    <div class="float-left">
+        <mat-form-field>
+            <input matInput placeholder="First Name" value="John" #firstNameTemp name="firstNameField">
+          </mat-form-field>
+          <mat-form-field>
+              <input matInput placeholder="Last Name" value="Doe" #lastNameTemp name="lastNameField">
+          </mat-form-field>
+        <div class="align-left">
+          <mat-form-field>
+            <span matPrefix>+351 &nbsp;</span>
+            <input type="tel" matInput maxlength="9" placeholder="Telephone" #telephoneTemp name="telephoneField">
+            <mat-hint align="end">{{telephoneTemp.value.length}} / 9</mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="align-left">
+          <mat-form-field>
+            <input matInput [matDatepicker]="picker" placeholder="Choose a date" #dateTemp>
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div>
+          <button mat-button color="primary" (click)="setAppointment(firstNameTemp.value, lastNameTemp.value, telephoneTemp.value, dateTemp.value)">Submit your appointment</button> 
+        </div>
+        <div>
+          Current appointment: <br>
+          Data -> {{date}} <br>
+          Nome -> {{firstName}} {{lastName}} <br>
+          Telemovel -> {{telephone}}
+        </div>
+    </div>
+  </form>
+</div>
