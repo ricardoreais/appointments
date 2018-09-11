@@ -1,9 +1,11 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="mat-app-background" style="text-align:center">
-  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item routerLink="/">Home</button>
-    <button mat-menu-item routerLink="/appointment">Create new appointment</button>
-  </mat-menu>
+  <mat-toolbar color="primary">
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="/">Home</button>
+      <button mat-menu-item routerLink="/appointment">Create new appointment</button>
+    </mat-menu>
+  </mat-toolbar>
   <router-outlet></router-outlet>
 </div>

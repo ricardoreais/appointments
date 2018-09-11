@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+body { margin: 0;}
+
+.align-left{
+    text-align: left;
+}
+
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
