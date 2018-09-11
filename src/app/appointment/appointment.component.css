@@ -1,3 +1,13 @@
+/* @import "../../colors.scss"; */
+
 .appointment-info-form{
     margin: 3em 0em 0em 15em;
+}
+
+.not-available {
+    background-color: #f44336 !important;
+}
+
+.mat-chip {
+    background-color: #1c73ff;
 }

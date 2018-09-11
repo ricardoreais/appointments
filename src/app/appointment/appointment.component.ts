@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Hour } from './hour';
 
 @Component({
   selector: 'app-appointment',
@@ -10,6 +11,22 @@ export class AppointmentComponent implements OnInit {
   firstName: string;
   lastName: string;
   telephone: string;
+  hours: Hour[] = [{
+    label: '08:00',
+    available: true
+  },
+  {
+    label: '09:00',
+    available: true
+  },
+  {
+    label: '10:00',
+    available: false
+  },
+  {
+    label: '11:00',
+    available: true
+  }];
 
   constructor() { }
 

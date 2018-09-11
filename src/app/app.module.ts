@@ -9,7 +9,10 @@ import { MatIconModule, MatIconRegistry } from '@angular/material/icon';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import {MatChipsModule} from '@angular/material/chips';
+import {MatStepperModule} from '@angular/material/stepper';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,6 +27,7 @@ import { AppointmentComponent } from './appointment/appointment.component';
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     MatDatepickerModule,
     MatFormFieldModule,
@@ -32,7 +36,9 @@ import { AppointmentComponent } from './appointment/appointment.component';
     MatMenuModule,
     MatIconModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatChipsModule,
+    MatStepperModule
   ],
   providers: [
     MatIconRegistry
