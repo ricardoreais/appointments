@@ -1,13 +1,15 @@
-<h2>Please create a new appointment below:</h2>
+<mat-toolbar color="primary">Please create a new appointment below</mat-toolbar>
 <div>
   <form class="appointment-info-form">
-    <div class="float-left">
-        <mat-form-field>
+    <div>
+        <div class="align-left">
+          <mat-form-field class="float-left">
             <input matInput placeholder="First Name" value="John" #firstNameTemp name="firstNameField">
           </mat-form-field>
           <mat-form-field>
               <input matInput placeholder="Last Name" value="Doe" #lastNameTemp name="lastNameField">
           </mat-form-field>
+        </div>
         <div class="align-left">
           <mat-form-field>
             <span matPrefix>+351 &nbsp;</span>
